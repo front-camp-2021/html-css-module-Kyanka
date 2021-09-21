@@ -1,0 +1,42 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+html{
+  font-size: 6.25%;
+}
+@media (max-width: 1250px) {
+  html{
+    font-size: 3.8%;
+  }
+}
+body{
+  display: grid;
+  grid-template-areas:
+  "head head"
+  "filt res"
+  "foot foot";
+  grid-template-rows: 160rem 1fr 100rem;
+  grid-template-columns: 30% 1fr;
+  padding-left: 25rem;
+  padding-right: 30rem;
+  margin: 0;
+  grid-gap: 30rem;
+  background: #F9F9F9;
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.filters{
+  grid-area: filt;
+}
+.results{
+  grid-area: res;
+}
+footer{
+  grid-area: foot;
+}
+
+
