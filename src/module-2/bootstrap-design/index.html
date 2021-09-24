@@ -15,47 +15,23 @@
 <header class="mb-4 row">
   <div class=" d-flex flex-row align-items-center justify-content-start logo">
     <img alt="Logo" class="m-4" src="images/logo.svg">
-    <h1 class="text-primary">Online Store</h1>
+    <p class="text-primary fs-1">Online Store</p>
   </div>
   <nav>
     <a class=" mx-2 text-decoration-none" href="">
-      <svg class="bi bi-house" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-           xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
-          fill-rule="evenodd"/>
-        <path
-          d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
-          fill-rule="evenodd"/>
-      </svg>
+      <img class="text-primary" src="images/icons/house.svg">
     </a>
-    <svg class=" mx-2 bi bi-chevron-double-right" fill="currentColor" height="16" viewBox="0 0 16 16"
-         width="16" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-        fill-rule="evenodd"/>
-      <path
-        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-        fill-rule="evenodd"/>
-    </svg>
+    <img src="images/icons/chevron-double-right.svg">
     <a class="text-decoration-none" href="">eCommerce</a>
-    <svg class=" mx-2 bi bi-chevron-double-right" fill="currentColor" height="16" viewBox="0 0 16 16"
-         width="16" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-        fill-rule="evenodd"/>
-      <path
-        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-        fill-rule="evenodd"/>
-    </svg>
+    <img src="images/icons/chevron-double-right.svg">
     <a class="mx-2 text-decoration-none" href="">Electronics</a>
   </nav>
 </header>
 
 <div class="row">
-  <div class="col-3 filters d-flex flex-column gap-3">
+  <div class="col-3 col-md-4 filters d-flex flex-column gap-3">
     <div class=" d-flex flex-row justify-content-between caption">
-      <h5 class="px-2 font-weight-lighter">Filters</h5>
+      <p class="px-2 fs-5 fw-light">Filters</p>
       <button class=" px-3 py-2 bg-white shadow rounded border-0 ">
         <svg class="bi bi-chevron-double-left" fill="currentColor" height="16" viewBox="0 0 16 16"
              width="16" xmlns="http://www.w3.org/2000/svg">
@@ -70,15 +46,15 @@
     </div>
 
     <div class=" d-flex flex-column flex-grow-1 bg-white shadow rounded px-3 py-3 filter-card">
-      <h5 class="filters-caption">Multi Range</h5>
-      <form action="" class="">
+      <p class="fs-5 fw-bolder filters-caption">Multi Range</p>
+      <div class="">
         <p><input class="mx-2" name="range" type="radio">$10</p>
         <p><input class="mx-2" name="range" type="radio">$10-$100</p>
         <p><input class="mx-2" name="range" type="radio">$100-$500</p>
         <p><input class="mx-2" name="range" type="radio">$500</p>
         <p><input class="mx-2" name="range" type="radio">All</p>
         <div class="w-75 mb-3 border-bottom border-secondary divider"></div>
-        <h5 class="filters-caption">Category</h5>
+        <p class="fs-5 fw-bolder filters-caption">Category</p>
         <p><input class="mx-2" type="checkbox">Cell Phones</p>
         <p><input class="mx-2" type="checkbox">Computers & Tablets</p>
         <p><input class="mx-2" type="checkbox">Cell Phones Accessories</p>
@@ -90,7 +66,7 @@
         <p><input class="mx-2" type="checkbox">TV & Home Theater</p>
         <p><input class="mx-2" type="checkbox">Small Kitchen Appliances</p>
         <div class="w-75 mb-3  border-bottom border-secondary divider"></div>
-        <h5 class="filters-caption">Brand</h5>
+        <p class="fs-5 fw-bolder filters-caption">Brand</p>
         <p><input class="mx-2" type="checkbox">Insigni</p>
         <p><input class="mx-2" type="checkbox">Samsung</p>
         <p><input class="mx-2" type="checkbox">Apple</p>
@@ -101,39 +77,31 @@
         <p><input class="mx-2" type="checkbox">LG</p>
         <p><input class="mx-2" type="checkbox">Canon</p>
         <p><input class="mx-2" type="checkbox">Speck</p>
-      </form>
+      </div>
     </div>
-    <button class="border-0 rounded bg-primary shadow text-white py-2">CLEAR ALL FILTERS</button>
+    <button class="border-0 rounded bg-primary shadow text-white text-uppercase py-2">clear all filters</button>
   </div>
 
   <div class=" col results d-flex flex-column gap-3">
     <div class="d-flex justify-content-between caption">
-      <h5 class="">7,618 results found</h5>
+      <p class="fs-5">7,618 results found</p>
       <button class=" px-3 py-2 bg-primary rounded text-white border-0">
-        <svg class="bi bi-heart" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-             xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-        </svg>
+        <img src="images/icons/heart-white.svg" >
       </button>
     </div>
     <div class="d-flex flex-column gap-3 under-caption">
-      <form class="d-flex flex-row">
-        <input class="flex-grow-1 rounded-start border-0 shadow px-3 py-2" placeholder="Search" type="search">
+      <div class="d-flex flex-row">
+        <input class="flex-grow-1 rounded-start border-0 shadow px-3 py-2 fs-5" placeholder="Search" type="search">
         <button class="bg-white rounded-end border-0 shadow px-3 py-2" type="submit">
-          <svg class="bi bi-search" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-               xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg>
+          <img src="images/icons/search.svg">
         </button>
-      </form>
+      </div>
       <main class="container-fluid p-1 m-0">
         <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-4">
           <div>
             <section class="col card pt-4 border-0 shadow rounded d-flex flex-column justify-content-center">
-              <figure class="d-flex justify-content-center ">
-                <img alt="Apple Watch" class="w-75 product" src="images/product.png">
+              <figure class=" d-flex justify-content-center ">
+                <img class="w-75" src="images/prod.png" alt="Apple Watch">
               </figure>
 
               <div class="d-flex justify-content-between px-3 rate_cost">
@@ -146,43 +114,34 @@
                   </svg>
                 </div>
 
-                <div class=" cost">
-                  <h6 class="">399$</h6>
+                <div class="cost">
+                  <span class="fs-5 ">399$</span>
                 </div>
               </div>
 
               <article class="p-3 description">
-                <h4>Apple Watch Series 4 GPS</h4>
-                <p>Redesigned from scratch and completely revised.</p>
+                <p class="fs-4">Apple Watch Series 4 GPS</p>
+                <p class="fw-light">Redesigned from scratch and completely revised.</p>
               </article>
 
               <div class="d-flex rounded-bottom action">
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 wishlist">
-                  <svg class="bi bi-heart" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-                  </svg>
-                  WISHLIST
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 text-uppercase wishlist">
+                  <img src="images/icons/heart.svg">
+                  wishlist
                 </button>
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white purchase ">
-                  <svg class="bi bi-bag-dash" fill="currentColor" height="16" viewBox="0 0 16 16"
-                       width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" fill-rule="evenodd"/>
-                    <path
-                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                  </svg>
-                  ADD TO CARD
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white text-uppercase purchase ">
+                  <img src="images/icons/bag-dash.svg">
+                  add to card
                 </button>
               </div>
             </section>
           </div>
           <div>
             <section class="col card pt-4 border-0 shadow rounded d-flex flex-column justify-content-center">
-              <figure class="d-flex justify-content-center ">
-                <img alt="Apple Watch" class="w-75 product" src="images/product.png">
+              <figure class=" d-flex justify-content-center ">
+                <img class="w-75" src="images/prod.png" alt="Apple Watch">
               </figure>
 
               <div class="d-flex justify-content-between px-3 rate_cost">
@@ -195,43 +154,34 @@
                   </svg>
                 </div>
 
-                <div class=" cost">
-                  <h6 class="">399$</h6>
+                <div class="cost">
+                  <span class="fs-5 ">399$</span>
                 </div>
               </div>
 
               <article class="p-3 description">
-                <h4>Apple Watch Series 4 GPS</h4>
-                <p>Redesigned from scratch and completely revised.</p>
+                <p class="fs-4">Apple Watch Series 4 GPS</p>
+                <p class="fw-light">Redesigned from scratch and completely revised.</p>
               </article>
 
               <div class="d-flex rounded-bottom action">
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 wishlist">
-                  <svg class="bi bi-heart" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-                  </svg>
-                  WISHLIST
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 text-uppercase wishlist">
+                  <img src="images/icons/heart.svg">
+                  wishlist
                 </button>
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white purchase ">
-                  <svg class="bi bi-bag-dash" fill="currentColor" height="16" viewBox="0 0 16 16"
-                       width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" fill-rule="evenodd"/>
-                    <path
-                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                  </svg>
-                  ADD TO CARD
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white text-uppercase purchase ">
+                  <img src="images/icons/bag-dash.svg">
+                  add to card
                 </button>
               </div>
             </section>
           </div>
           <div>
             <section class="col card pt-4 border-0 shadow rounded d-flex flex-column justify-content-center">
-              <figure class="d-flex justify-content-center ">
-                <img alt="Apple Watch" class="w-75 product" src="images/product.png">
+              <figure class=" d-flex justify-content-center ">
+                <img class="w-75" src="images/prod.png" alt="Apple Watch">
               </figure>
 
               <div class="d-flex justify-content-between px-3 rate_cost">
@@ -244,43 +194,34 @@
                   </svg>
                 </div>
 
-                <div class=" cost">
-                  <h6 class="">399$</h6>
+                <div class="cost">
+                  <span class="fs-5 ">399$</span>
                 </div>
               </div>
 
               <article class="p-3 description">
-                <h4>Apple Watch Series 4 GPS</h4>
-                <p>Redesigned from scratch and completely revised.</p>
+                <p class="fs-4">Apple Watch Series 4 GPS</p>
+                <p class="fw-light">Redesigned from scratch and completely revised.</p>
               </article>
 
               <div class="d-flex rounded-bottom action">
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 wishlist">
-                  <svg class="bi bi-heart" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-                  </svg>
-                  WISHLIST
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 text-uppercase wishlist">
+                  <img src="images/icons/heart.svg">
+                  wishlist
                 </button>
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white purchase ">
-                  <svg class="bi bi-bag-dash" fill="currentColor" height="16" viewBox="0 0 16 16"
-                       width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" fill-rule="evenodd"/>
-                    <path
-                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                  </svg>
-                  ADD TO CARD
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white text-uppercase purchase ">
+                  <img src="images/icons/bag-dash.svg">
+                  add to card
                 </button>
               </div>
             </section>
           </div>
-          <div>
+          <div class="d-none d-md-inline">
             <section class="col card pt-4 border-0 shadow rounded d-flex flex-column justify-content-center">
-              <figure class="d-flex justify-content-center ">
-                <img alt="Apple Watch" class="w-75 product" src="images/product.png">
+              <figure class=" d-flex justify-content-center ">
+                <img class="w-75" src="images/prod.png" alt="Apple Watch">
               </figure>
 
               <div class="d-flex justify-content-between px-3 rate_cost">
@@ -293,43 +234,34 @@
                   </svg>
                 </div>
 
-                <div class=" cost">
-                  <h6 class="">399$</h6>
+                <div class="cost">
+                  <span class="fs-5 ">399$</span>
                 </div>
               </div>
 
               <article class="p-3 description">
-                <h4>Apple Watch Series 4 GPS</h4>
-                <p>Redesigned from scratch and completely revised.</p>
+                <p class="fs-4">Apple Watch Series 4 GPS</p>
+                <p class="fw-light">Redesigned from scratch and completely revised.</p>
               </article>
 
               <div class="d-flex rounded-bottom action">
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 wishlist">
-                  <svg class="bi bi-heart" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-                  </svg>
-                  WISHLIST
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 text-uppercase wishlist">
+                  <img src="images/icons/heart.svg">
+                  wishlist
                 </button>
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white purchase ">
-                  <svg class="bi bi-bag-dash" fill="currentColor" height="16" viewBox="0 0 16 16"
-                       width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" fill-rule="evenodd"/>
-                    <path
-                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                  </svg>
-                  ADD TO CARD
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white text-uppercase purchase ">
+                  <img src="images/icons/bag-dash.svg">
+                  add to card
                 </button>
               </div>
             </section>
           </div>
-          <div>
+          <div class="d-none d-md-inline">
             <section class="col card pt-4 border-0 shadow rounded d-flex flex-column justify-content-center">
-              <figure class="d-flex justify-content-center ">
-                <img alt="Apple Watch" class="w-75 product" src="images/product.png">
+              <figure class=" d-flex justify-content-center ">
+                <img class="w-75" src="images/prod.png" alt="Apple Watch">
               </figure>
 
               <div class="d-flex justify-content-between px-3 rate_cost">
@@ -342,43 +274,34 @@
                   </svg>
                 </div>
 
-                <div class=" cost">
-                  <h6 class="">399$</h6>
+                <div class="cost">
+                  <span class="fs-5 ">399$</span>
                 </div>
               </div>
 
               <article class="p-3 description">
-                <h4>Apple Watch Series 4 GPS</h4>
-                <p>Redesigned from scratch and completely revised.</p>
+                <p class="fs-4">Apple Watch Series 4 GPS</p>
+                <p class="fw-light">Redesigned from scratch and completely revised.</p>
               </article>
 
               <div class="d-flex rounded-bottom action">
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 wishlist">
-                  <svg class="bi bi-heart" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-                  </svg>
-                  WISHLIST
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 text-uppercase wishlist">
+                  <img src="images/icons/heart.svg">
+                  wishlist
                 </button>
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white purchase ">
-                  <svg class="bi bi-bag-dash" fill="currentColor" height="16" viewBox="0 0 16 16"
-                       width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" fill-rule="evenodd"/>
-                    <path
-                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                  </svg>
-                  ADD TO CARD
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white text-uppercase purchase ">
+                  <img src="images/icons/bag-dash.svg">
+                  add to card
                 </button>
               </div>
             </section>
           </div>
-          <div>
+          <div class="d-none d-md-inline">
             <section class="col card pt-4 border-0 shadow rounded d-flex flex-column justify-content-center">
-              <figure class="d-flex justify-content-center ">
-                <img alt="Apple Watch" class="w-75 product" src="images/product.png">
+              <figure class=" d-flex justify-content-center ">
+                <img class="w-75" src="images/prod.png" alt="Apple Watch">
               </figure>
 
               <div class="d-flex justify-content-between px-3 rate_cost">
@@ -391,43 +314,34 @@
                   </svg>
                 </div>
 
-                <div class=" cost">
-                  <h6 class="">399$</h6>
+                <div class="cost">
+                  <span class="fs-5 ">399$</span>
                 </div>
               </div>
 
               <article class="p-3 description">
-                <h4>Apple Watch Series 4 GPS</h4>
-                <p>Redesigned from scratch and completely revised.</p>
+                <p class="fs-4">Apple Watch Series 4 GPS</p>
+                <p class="fw-light">Redesigned from scratch and completely revised.</p>
               </article>
 
               <div class="d-flex rounded-bottom action">
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 wishlist">
-                  <svg class="bi bi-heart" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-                  </svg>
-                  WISHLIST
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 text-uppercase wishlist">
+                  <img src="images/icons/heart.svg">
+                  wishlist
                 </button>
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white purchase ">
-                  <svg class="bi bi-bag-dash" fill="currentColor" height="16" viewBox="0 0 16 16"
-                       width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" fill-rule="evenodd"/>
-                    <path
-                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                  </svg>
-                  ADD TO CARD
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white text-uppercase purchase ">
+                  <img src="images/icons/bag-dash.svg">
+                  add to card
                 </button>
               </div>
             </section>
           </div>
-          <div>
+          <div class="d-none d-xxl-inline">
             <section class="col card pt-4 border-0 shadow rounded d-flex flex-column justify-content-center">
-              <figure class="d-flex justify-content-center ">
-                <img alt="Apple Watch" class="w-75 product" src="images/product.png">
+              <figure class=" d-flex justify-content-center ">
+                <img class="w-75" src="images/prod.png" alt="Apple Watch">
               </figure>
 
               <div class="d-flex justify-content-between px-3 rate_cost">
@@ -440,43 +354,34 @@
                   </svg>
                 </div>
 
-                <div class=" cost">
-                  <h6 class="">399$</h6>
+                <div class="cost">
+                  <span class="fs-5 ">399$</span>
                 </div>
               </div>
 
               <article class="p-3 description">
-                <h4>Apple Watch Series 4 GPS</h4>
-                <p>Redesigned from scratch and completely revised.</p>
+                <p class="fs-4">Apple Watch Series 4 GPS</p>
+                <p class="fw-light">Redesigned from scratch and completely revised.</p>
               </article>
 
               <div class="d-flex rounded-bottom action">
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 wishlist">
-                  <svg class="bi bi-heart" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-                  </svg>
-                  WISHLIST
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 text-uppercase wishlist">
+                  <img src="images/icons/heart.svg">
+                  wishlist
                 </button>
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white purchase ">
-                  <svg class="bi bi-bag-dash" fill="currentColor" height="16" viewBox="0 0 16 16"
-                       width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" fill-rule="evenodd"/>
-                    <path
-                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                  </svg>
-                  ADD TO CARD
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white text-uppercase purchase ">
+                  <img src="images/icons/bag-dash.svg">
+                  add to card
                 </button>
               </div>
             </section>
           </div>
-          <div>
+          <div class="d-none d-xxl-inline">
             <section class="col card pt-4 border-0 shadow rounded d-flex flex-column justify-content-center">
-              <figure class="d-flex justify-content-center ">
-                <img alt="Apple Watch" class="w-75 product" src="images/product.png">
+              <figure class=" d-flex justify-content-center ">
+                <img class="w-75" src="images/prod.png" alt="Apple Watch">
               </figure>
 
               <div class="d-flex justify-content-between px-3 rate_cost">
@@ -489,43 +394,34 @@
                   </svg>
                 </div>
 
-                <div class=" cost">
-                  <h6 class="">399$</h6>
+                <div class="cost">
+                  <span class="fs-5 ">399$</span>
                 </div>
               </div>
 
               <article class="p-3 description">
-                <h4>Apple Watch Series 4 GPS</h4>
-                <p>Redesigned from scratch and completely revised.</p>
+                <p class="fs-4">Apple Watch Series 4 GPS</p>
+                <p class="fw-light">Redesigned from scratch and completely revised.</p>
               </article>
 
               <div class="d-flex rounded-bottom action">
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 wishlist">
-                  <svg class="bi bi-heart" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-                  </svg>
-                  WISHLIST
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 text-uppercase wishlist">
+                  <img src="images/icons/heart.svg">
+                  wishlist
                 </button>
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white purchase ">
-                  <svg class="bi bi-bag-dash" fill="currentColor" height="16" viewBox="0 0 16 16"
-                       width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" fill-rule="evenodd"/>
-                    <path
-                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                  </svg>
-                  ADD TO CARD
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white text-uppercase purchase ">
+                  <img src="images/icons/bag-dash.svg">
+                  add to card
                 </button>
               </div>
             </section>
           </div>
-          <div>
+          <div class="d-none d-xxl-inline">
             <section class="col card pt-4 border-0 shadow rounded d-flex flex-column justify-content-center">
-              <figure class="d-flex justify-content-center ">
-                <img alt="Apple Watch" class="w-75 product" src="images/product.png">
+              <figure class=" d-flex justify-content-center ">
+                <img class="w-75" src="images/prod.png" alt="Apple Watch">
               </figure>
 
               <div class="d-flex justify-content-between px-3 rate_cost">
@@ -538,35 +434,26 @@
                   </svg>
                 </div>
 
-                <div class=" cost">
-                  <h6 class="">399$</h6>
+                <div class="cost">
+                  <span class="fs-5 ">399$</span>
                 </div>
               </div>
 
               <article class="p-3 description">
-                <h4>Apple Watch Series 4 GPS</h4>
-                <p>Redesigned from scratch and completely revised.</p>
+                <p class="fs-4">Apple Watch Series 4 GPS</p>
+                <p class="fw-light">Redesigned from scratch and completely revised.</p>
               </article>
 
               <div class="d-flex rounded-bottom action">
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 wishlist">
-                  <svg class="bi bi-heart" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-                  </svg>
-                  WISHLIST
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 text-uppercase wishlist">
+                  <img src="images/icons/heart.svg">
+                  wishlist
                 </button>
                 <button
-                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white purchase ">
-                  <svg class="bi bi-bag-dash" fill="currentColor" height="16" viewBox="0 0 16 16"
-                       width="16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z" fill-rule="evenodd"/>
-                    <path
-                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                  </svg>
-                  ADD TO CARD
+                  class="d-flex align-items-center gap-2 justify-content-center py-2 w-50 rounded-bottom border-0 bg-primary text-white text-uppercase purchase ">
+                  <img src="images/icons/bag-dash.svg">
+                  add to card
                 </button>
               </div>
             </section>
@@ -594,13 +481,13 @@
       <a class="m-2 text-decoration-none text-black" href="">1</a>
       <a class="m-2 text-decoration-none text-black" href="">2</a>
       <a class="m-2 text-decoration-none text-black" href="">3</a>
-      <a class="m-2 text-decoration-none text-black" href="">4</a>
-      <a class="m-2 text-decoration-none text-black" href="">5</a>
-      <a class="m-2 text-decoration-none text-black" href="">6</a>
-      <a class="m-2 text-decoration-none text-black" href="">7</a>
-      <a class="m-2 text-decoration-none text-black" href="">8</a>
-      <a class="m-2 text-decoration-none text-black" href="">9</a>
-      <a class="m-2 text-decoration-none text-black" href="">10</a>
+      <a class="d-none d-md-inline m-2 text-decoration-none text-black" href="">4</a>
+      <a class="d-none d-md-inline m-2 text-decoration-none text-black" href="">5</a>
+      <a class="d-none d-md-inline m-2 text-decoration-none text-black" href="">6</a>
+      <a class="d-none d-md-inline m-2 text-decoration-none text-black" href="">7</a>
+      <a class="d-none d-xxl-inline m-2 text-decoration-none text-black" href="">8</a>
+      <a class="d-none d-xxl-inline m-2 text-decoration-none text-black" href="">9</a>
+      <a class="d-none d-xxl-inline m-2 text-decoration-none text-black" href="">10</a>
     </div>
     <div class="p-2 m-3 rounded-circle bg-light shadow arrow">
       <a>

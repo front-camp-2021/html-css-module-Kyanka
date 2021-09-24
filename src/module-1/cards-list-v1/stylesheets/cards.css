@@ -1,8 +1,9 @@
-body{
+body {
   display: flex;
   justify-content: center;
 }
-.card-container{
+
+.card-container {
   max-width: 1312px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

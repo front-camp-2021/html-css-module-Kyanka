@@ -1,16 +1,22 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;900&display=swap');
+
+* {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  font-weight: 300;
 }
-html{
+
+html {
   font-size: 6.25%;
 }
+
 @media (max-width: 1250px) {
-  html{
+  html {
     font-size: 3.8%;
   }
 }
-body{
+
+body {
   display: grid;
   grid-template-areas:
   "head head"
@@ -23,20 +29,21 @@ body{
   margin: 0;
   grid-gap: 30rem;
   background: #F9F9F9;
-  -ms-overflow-style: none;  /* IE and Edge */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
-.filters{
-  grid-area: filt;
+
+@media (max-width: 560px) {
+  body {
+    grid-template-areas:
+    "head head"
+    "res res"
+    "foot foot";
+  }
 }
-.results{
-  grid-area: res;
-}
-footer{
-  grid-area: foot;
-}
+
 
 

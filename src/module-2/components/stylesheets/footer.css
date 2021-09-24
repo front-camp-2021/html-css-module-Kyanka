@@ -1,4 +1,5 @@
-footer{
+footer {
+  grid-area: foot;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,7 +8,8 @@ footer{
   font-weight: 300;
   font-size: 18px;
 }
-.arrow{
+
+.arrow {
   width: 40rem;
   height: 40rem;
   display: flex;
@@ -16,10 +18,12 @@ footer{
   border-radius: 100%;
   background: #EDEDED;
 }
-.back{
+
+.back {
   transform: rotate(180deg);
 }
-.pages{
+
+.pages {
   height: 40rem;
   padding: 0 15rem 0 15rem;
   display: flex;
@@ -31,10 +35,12 @@ footer{
   background: #EDEDED;
   border-radius: 40rem;
 }
-.pages a{
+
+.pages a {
   text-decoration: none;
 }
-.pages a:target{
+
+.pages a:target {
   width: 40rem;
   height: 40rem;
   display: flex;

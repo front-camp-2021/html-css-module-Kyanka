@@ -1,59 +1,60 @@
-.card{
-  max-height: 470rem;
+.card {
+  height: 486rem;
   width: 100%;
   border-radius: 8rem;
-  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.135216);
-
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.14);
+  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
-  background: white;
-  padding-top: 30rem;
 }
 
-.product{
-
-  max-width: 230rem;
+.product {
+  margin-top: 20rem;
+  height: 272rem;
+  width: 238rem;
   border-radius: 0;
-
   position: relative;
 }
-.rate_cost{
-  width: 90%;
 
+.rate_cost {
+  width: 90%;
   display: inherit;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.rate{
+
+.rate {
   height: 30rem;
   width: 65rem;
   border-radius: 3rem;
-
   display: inherit;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   background: #6F64F8;
   color: white;
   font-size: 14rem;
-  font-weight: 300;
+  line-height: 17rem;
 }
-.rate > *{
+
+.rate > * {
   margin: 5rem;
 }
-.rate .icon{
+
+.rate .icon {
   height: 12rem;
-  width: 12rem;
+  width: 13rem;
 }
-.cost{
+
+.cost {
   font-size: 18rem;
+  line-height: 21rem;
 }
-.description{
+
+.description {
   width: 100%;
   margin-bottom: 15rem;
 
@@ -61,46 +62,55 @@
   flex-direction: column;
   justify-content: center;
 }
-.description > *{
-  margin: 0 0 2rem 20rem;
+
+.description > * {
+  margin: 5rem 0 2rem 20rem;
 }
-.description h2{
+
+.description span {
   font-weight: 400;
   font-size: 16rem;
   line-height: 19rem;
 }
-.description p{
+
+.description p {
   font-size: 12rem;
-  font-weight: 300;
+  line-height: 14rem;
 }
-.action{
+
+.action {
   width: 100%;
   display: inherit;
   justify-self: flex-end;
 }
-.action button{
-  height: 45rem;
-  width: 200.53907775878906rem;
-  border: 0;
-  margin:0;
 
+.action button {
+  height: 45rem;
+  width: 200rem;
+  border: 0;
+  margin: 0;
   flex-grow: 1;
   display: inherit;
   align-items: center;
   justify-content: center;
-
   font-weight: 600;
   font-size: 14rem;
+  line-height: 18rem;
 }
-.wishlist{
+
+.wishlist {
   border-radius: 0 0 0 8rem;
   background: #EDEDED;
+  text-transform: uppercase;
 }
-.purchase{
+
+.purchase {
   border-radius: 0 0 8rem 0;
   background: #6F64F8;
   color: white;
+  text-transform: uppercase;
 }
-.action button .icon{
+
+.action button .icon {
   margin-right: 8rem;
 }

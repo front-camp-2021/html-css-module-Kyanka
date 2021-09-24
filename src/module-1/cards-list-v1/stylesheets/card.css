@@ -1,65 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;900&display=swap');
+
+* {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 300;
 }
-.card{
+
+.card {
   height: 486px;
   max-width: 400px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
-
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.14);
   background: white;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-.product{
+.product {
   height: 272px;
-  width: 237.19676208496094px;
+  width: 238px;
   border-radius: 0;
-
   position: relative;
 }
-.rate_cost{
-  width: 90%;
 
+.rate_cost {
+  width: 90%;
   display: inherit;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.rate{
-  height: 30px;
-  width: 64.69001770019531px;
-  border-radius: 3px;
 
+.rate {
+  height: 30px;
+  width: 65px;
+  border-radius: 3px;
   display: inherit;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   background: #6F64F8;
   color: white;
   font-size: 14px;
   line-height: 17px;
 }
-.rate > *{
+
+.rate > * {
   margin: 5px;
 }
-.rate .icon{
+
+.rate .icon {
   height: 12px;
-  width: 12.938005447387695px;
+  width: 13px;
 }
-.cost{
+
+.cost {
   font-size: 18px;
   line-height: 21px;
 }
-.description{
+
+.description {
   width: 100%;
   margin-bottom: 15px;
 
@@ -67,47 +69,55 @@
   flex-direction: column;
   justify-content: center;
 }
-.description > *{
-  margin: 0 0 2px 20px;
+
+.description > * {
+  margin: 5px 0 2px 20px;
 }
-.description h2{
+
+.description span {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 }
-.description p{
+
+.description p {
   font-size: 12px;
   line-height: 14px;
 }
-.action{
+
+.action {
   width: 100%;
   display: inherit;
   justify-self: flex-end;
 }
-.action button{
-  height: 45px;
-  width: 200.53907775878906px;
-  border: 0;
-  margin:0;
 
+.action button {
+  height: 45px;
+  width: 200px;
+  border: 0;
+  margin: 0;
   flex-grow: 1;
   display: inherit;
   align-items: center;
   justify-content: center;
-
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
 }
-.wishlist{
+
+.wishlist {
   border-radius: 0 0 0 8px;
   background: #EDEDED;
+  text-transform: uppercase;
 }
-.purchase{
+
+.purchase {
   border-radius: 0 0 8px 0;
   background: #6F64F8;
   color: white;
+  text-transform: uppercase;
 }
-.action button .icon{
+
+.action button .icon {
   margin-right: 8px;
 }
