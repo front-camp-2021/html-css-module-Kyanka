@@ -9,7 +9,7 @@ function styles(cb) {
   src(`${srcPath}styles/style.scss`)
     .pipe(sourcemaps.init())
     .pipe(sass(
-      //{ outputStyle: 'compressed' }
+      { outputStyle: 'compressed' }
       ).on('error', sass.logError))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 2 version'],

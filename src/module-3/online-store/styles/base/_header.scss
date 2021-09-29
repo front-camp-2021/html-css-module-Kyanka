@@ -1,0 +1,46 @@
+@use 'global' as *;
+
+.header {
+  grid-area: head;
+  display: flex;
+  flex-direction: column;
+
+  .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25rem;
+    &__img{
+      margin: 0;
+      height: 70rem;
+      width: 90rem;
+    }
+    &__heading{
+      @include def-font(40rem, 600, map-get($colors, text-purple));
+    }
+  }
+  .link-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 14rem;
+    font-size: 14rem;
+    font-weight: 400;
+    &__home-link{
+      @include def-font(25rem, 400, map-get($colors, text-purple));
+    }
+    &__link{
+      @include def-font(14rem, 400, map-get($colors, text-purple));
+      text-decoration: none;
+    }
+    &__divider{
+      width: 14rem;
+    }
+  }
+}
+
+
+
+
+
+

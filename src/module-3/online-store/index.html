@@ -1,16 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Store</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Main</title>
+  <!--  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap"-->
+  <!--        rel="stylesheet">-->
+  <!--  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"-->
+  <!--        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" rel="stylesheet">-->
+  <!--  <script crossorigin="anonymous"-->
+  <!--          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"-->
+  <!--          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>-->
+  <link href="style.css" rel="stylesheet">
 </head>
+<body class="body">
+<header class="header">
+  <div class="logo">
+    <img alt="Logo" class="logo__img" src="images/logo.svg">
+    <h1 class="logo__heading">Online Store</h1>
+  </div>
+  <nav class="link-menu">
+    <a class="link-menu__link" href=""><span class="link-menu__home-link">&#8962;</span></a>
+    <img class="link-menu__divider" src="images/arrows.png">
+    <a class="link-menu__link" href="">eCommerce</a>
+    <img class="link-menu__divider" src="images/arrows.png">
+    <a class="link-menu__link" href="">Electronics</a>
+  </nav>
+</header>
 
-<body>
+<div class="filters">
+  <div class="caption">
+    <span class="caption__text">Filters</span>
+    <button class="caption__button"><img alt="arrows" class="caption__img" src="images/arrows.png"></button>
+  </div>
 
+  <div class="filters__card">
+    <span class="filters__caption">Multi Range</span>
+    <div>
+      <p class="filters__input"><input class="filters__input--radio" name="range" type="radio">$10</p>
+      <p class="filters__input"><input class="filters__input--radio" name="range" type="radio">$10-$100</p>
+      <p class="filters__input"><input class="filters__input--radio" name="range" type="radio">$100-$500</p>
+      <p class="filters__input"><input class="filters__input--radio" name="range" type="radio">$500</p>
+      <p class="filters__input"><input class="filters__input--radio" name="range" type="radio">All</p>
+      <div class="filters__divider"></div>
+      <span class="filters__caption">Category</span>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Cell Phones</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Computers & Tablets</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Cell Phones Accessories</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Appliances</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Audio</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">iPhone Accessories</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Cameras & Camcorders</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">iPhone Cases & Clips</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">TV & Home Theater</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Small Kitchen Appliances</p>
+      <div class="filters__divider"></div>
+      <span class="filters__caption">Brand</span>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Insigni</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Samsung</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Apple</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">HP</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Sony</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Metra</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Dyne</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">LG</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Canon</p>
+      <p class="filters__input"><input class="filters__input--checkbox" type="checkbox">Speck</p>
+    </div>
+  </div>
+  <button class="filters__button">clear all filters</button>
+</div>
+
+<div class="results">
+  <div class="caption">
+    <span class="caption__text">7,618 results found</span>
+    <button class="caption__button"><img class="caption__img" src="images/wishlist.svg"></button>
+  </div>
+  <div class="under-caption">
+    <div class="search">
+      <input class="search__input" placeholder="Search" type="search">
+      <button class="search__button" type="submit"><img class="search__img" src="images/search.svg"></button>
+    </div>
+    <main class="under-caption__cards">
+      <section class="card">
+        <figure class="card__figure">
+          <img alt="Apple Watch" class="card__product" src="images/product.png">
+        </figure>
+
+        <div class="info">
+          <div class="info__rate">
+            <span class="info__rate--number">3.4</span>
+            <img alt="Rate Star" class="info__rate--icon" src="images/rate-star.svg">
+          </div>
+
+          <div class="info__cost">
+            <span class="info__cost--number">399$</span>
+          </div>
+        </div>
+
+        <article class="description">
+          <span class="description__heading">Apple Watch Series 4 GPS</span>
+          <p class="description__text">Redesigned from scratch and completely revised.</p>
+        </article>
+
+        <div class="action">
+          <button class="action__button action__button--wishlist"><img class="action__icon" src="images/wishlist.svg">wishlist
+          </button>
+          <button class="action__button action__button--purchase "><img class="action__icon"
+                                                                        src="images/shopping-bag.svg">add to card
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <figure class="card__figure">
+          <img alt="Apple Watch" class="card__product" src="images/product.png">
+        </figure>
+
+        <div class="info">
+          <div class="info__rate">
+            <span class="info__rate--number">3.4</span>
+            <img alt="Rate Star" class="info__rate--icon" src="images/rate-star.svg">
+          </div>
+
+          <div class="info__cost">
+            <span class="info__cost--number">399$</span>
+          </div>
+        </div>
+
+        <article class="description">
+          <span class="description__heading">Apple Watch Series 4 GPS</span>
+          <p class="description__text">Redesigned from scratch and completely revised.</p>
+        </article>
+
+        <div class="action">
+          <button class="action__button action__button--wishlist"><img class="action__icon" src="images/wishlist.svg">wishlist
+          </button>
+          <button class="action__button action__button--purchase "><img class="action__icon"
+                                                                        src="images/shopping-bag.svg">add to card
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <figure class="card__figure">
+          <img alt="Apple Watch" class="card__product" src="images/product.png">
+        </figure>
+
+        <div class="info">
+          <div class="info__rate">
+            <span class="info__rate--number">3.4</span>
+            <img alt="Rate Star" class="info__rate--icon" src="images/rate-star.svg">
+          </div>
+
+          <div class="info__cost">
+            <span class="info__cost--number">399$</span>
+          </div>
+        </div>
+
+        <article class="description">
+          <span class="description__heading">Apple Watch Series 4 GPS</span>
+          <p class="description__text">Redesigned from scratch and completely revised.</p>
+        </article>
+
+        <div class="action">
+          <button class="action__button action__button--wishlist"><img class="action__icon" src="images/wishlist.svg">wishlist
+          </button>
+          <button class="action__button action__button--purchase "><img class="action__icon"
+                                                                        src="images/shopping-bag.svg">add to card
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <figure class="card__figure">
+          <img alt="Apple Watch" class="card__product" src="images/product.png">
+        </figure>
+
+        <div class="info">
+          <div class="info__rate">
+            <span class="info__rate--number">3.4</span>
+            <img alt="Rate Star" class="info__rate--icon" src="images/rate-star.svg">
+          </div>
+
+          <div class="info__cost">
+            <span class="info__cost--number">399$</span>
+          </div>
+        </div>
+
+        <article class="description">
+          <span class="description__heading">Apple Watch Series 4 GPS</span>
+          <p class="description__text">Redesigned from scratch and completely revised.</p>
+        </article>
+
+        <div class="action">
+          <button class="action__button action__button--wishlist"><img class="action__icon" src="images/wishlist.svg">wishlist
+          </button>
+          <button class="action__button action__button--purchase "><img class="action__icon"
+                                                                        src="images/shopping-bag.svg">add to card
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <figure class="card__figure">
+          <img alt="Apple Watch" class="card__product" src="images/product.png">
+        </figure>
+
+        <div class="info">
+          <div class="info__rate">
+            <span class="info__rate--number">3.4</span>
+            <img alt="Rate Star" class="info__rate--icon" src="images/rate-star.svg">
+          </div>
+
+          <div class="info__cost">
+            <span class="info__cost--number">399$</span>
+          </div>
+        </div>
+
+        <article class="description">
+          <span class="description__heading">Apple Watch Series 4 GPS</span>
+          <p class="description__text">Redesigned from scratch and completely revised.</p>
+        </article>
+
+        <div class="action">
+          <button class="action__button action__button--wishlist"><img class="action__icon" src="images/wishlist.svg">wishlist
+          </button>
+          <button class="action__button action__button--purchase "><img class="action__icon"
+                                                                        src="images/shopping-bag.svg">add to card
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <figure class="card__figure">
+          <img alt="Apple Watch" class="card__product" src="images/product.png">
+        </figure>
+
+        <div class="info">
+          <div class="info__rate">
+            <span class="info__rate--number">3.4</span>
+            <img alt="Rate Star" class="info__rate--icon" src="images/rate-star.svg">
+          </div>
+
+          <div class="info__cost">
+            <span class="info__cost--number">399$</span>
+          </div>
+        </div>
+
+        <article class="description">
+          <span class="description__heading">Apple Watch Series 4 GPS</span>
+          <p class="description__text">Redesigned from scratch and completely revised.</p>
+        </article>
+
+        <div class="action">
+          <button class="action__button action__button--wishlist"><img class="action__icon" src="images/wishlist.svg">wishlist
+          </button>
+          <button class="action__button action__button--purchase "><img class="action__icon"
+                                                                        src="images/shopping-bag.svg">add to card
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <figure class="card__figure">
+          <img alt="Apple Watch" class="card__product" src="images/product.png">
+        </figure>
+
+        <div class="info">
+          <div class="info__rate">
+            <span class="info__rate--number">3.4</span>
+            <img alt="Rate Star" class="info__rate--icon" src="images/rate-star.svg">
+          </div>
+
+          <div class="info__cost">
+            <span class="info__cost--number">399$</span>
+          </div>
+        </div>
+
+        <article class="description">
+          <span class="description__heading">Apple Watch Series 4 GPS</span>
+          <p class="description__text">Redesigned from scratch and completely revised.</p>
+        </article>
+
+        <div class="action">
+          <button class="action__button action__button--wishlist"><img class="action__icon" src="images/wishlist.svg">wishlist
+          </button>
+          <button class="action__button action__button--purchase "><img class="action__icon"
+                                                                        src="images/shopping-bag.svg">add to card
+          </button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer__arrow footer__arrow--back"><a><img class="footer__img" src="images/arrow.svg"></a></div>
+  <div class="footer__nav">
+    <a class="footer__link" href="">1</a>
+    <a class="footer__link" href="">2</a>
+    <a class="footer__link" href="">3</a>
+    <a class="footer__link" href="">4</a>
+    <a class="footer__link" href="">5</a>
+    <a class="footer__link" href="">6</a>
+    <a class="footer__link" href="">7</a>
+    <a class="footer__link" href="">8</a>
+    <a class="footer__link" href="">9</a>
+    <a class="footer__link" href="">10</a>
+  </div>
+  <div class="footer__arrow"><img class="footer__img" src="images/arrow.svg"></div>
+</footer>
 </body>
-
 </html>
