@@ -3,8 +3,7 @@
 @mixin option-button($type) {
   &__button {
     @extend %def-box;
-    height: 40rem;
-    width: 45rem;
+    @include set-size(45rem, 40rem);
     @if $type == filter {
       background: map-get($colors, white);
     } @else if $type == wishlist {
@@ -24,19 +23,17 @@
 %action-button {
   @extend %def-box;
   @include def-font(14rem, 600);
-  height: 45rem;
-  width: 200rem;
+  @include set-size(200rem, 45rem);
   margin: 0;
+  @include display-flex(row, center, center);
   flex-grow: 1;
-  display: inherit;
-  align-items: center;
-  justify-content: center;
   text-transform: uppercase;
 }
 
 
 .filters {
   grid-area: filt;
+  @include display-flex(column, space-around, space-around);
   display: flex;
   flex-direction: column;
   gap: 15rem;
@@ -45,9 +42,7 @@
   }
 
   .caption {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @include display-flex(row, space-between, baseline);
 
     &__text {
       @include def-font(18rem, 400);
@@ -57,9 +52,9 @@
   }
 
   &__card {
-    flex-grow: 1;
     @extend %def-box;
-    background: map-get($colors,white);
+    flex-grow: 1;
+    background: map-get($colors, white);
     padding-left: 40rem;
     padding-top: 20rem;
   }
@@ -73,42 +68,33 @@
   }
 
   &__input--radio, &__input--checkbox {
-    height: 15rem;
-    width: 17rem;
+    @include set-size(17rem, 15rem);
     border: 1rem solid map-get($colors, border-gray);
   }
 
   &__divider {
-    height: 0;
-    width: 80%;
+    @include set-size(80%,0px);
     margin: 30rem 0 30rem 0;
     border: 1px solid map-get($colors, divider-gray);
     background: map-get($colors, divider-gray);
   }
 
   &__button {
-    height: 56rem;
-    width: 100%;
     @extend %def-box;
+    @include set-size(100%, 56rem);
     background: map-get($colors, bg-purple);
-    color: white;
-    font-size: 18rem;
-    font-weight: 400;
-    @include def-font(18, 400, white);
+    @include def-font(18rem, 400, white);
     text-transform: uppercase;
   }
-
 }
 
 .results {
   grid-area: res;
-  display: flex;
-  flex-direction: column;
-  gap: 15rem;
+  @include display-flex(column, space-between, space-between, 15rem);
 
   .caption {
-    display: flex;
-    justify-content: space-between;
+    @include display-flex(row, space-between, baseline);
+    flex-grow: 1;
 
     &__text {
       @include def-font(18rem, 400);
@@ -118,20 +104,16 @@
   }
 
   .under-caption {
-    display: flex;
-    flex-direction: column;
-    gap: 30rem;
+    flex-grow: 1;
+    @include display-flex(column, flex-start, flex-start, 30rem);
 
     .search {
-      height: 60rem;
-      width: 100%;
       @extend %def-box;
-      display: flex;
-      justify-content: space-between;
+      @include set-size(100%,60rem);
+      @include display-flex(row, space-between, flex-start);
 
       &__input {
-        width: 100%;
-        height: 60rem;
+        @include set-size(100%, 60rem);
         border: 0;
         padding-left: 30rem;
         @include def-font(22rem, 300);
@@ -161,10 +143,10 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 30rem;
-      @include media(xxl){
+      @include media(xxl) {
         grid-template-columns: repeat(2, 1fr);
       }
-      @include media(sm){
+      @include media(xl) {
         grid-template-columns: repeat(1, 1fr);
       }
     }

@@ -5,7 +5,7 @@ $colors: (
   bg-purple: #6F64F8,
   text-purple: #7E72F2,
   light-white: #F9F9F9,
-  white: #FFFFFF,
+  white: #FFF,
   light-gray: #EDEDED,
   border-gray: #979797,
   divider-gray: #D6D6D6,
@@ -30,12 +30,25 @@ $sizes: (
   }
 }
 
-@mixin def-font($font-size, $font-weight, $color:black) {
+@mixin def-font($font-size, $font-weight, $color:inherit) {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-size: $font-size;
   font-weight: $font-weight;
   color: $color;
+}
+
+@mixin display-flex($direction, $justify, $align, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin set-size($width, $height) {
+  width: $width;
+  height: $height;
 }
 
 //@extend %;
@@ -48,18 +61,19 @@ $sizes: (
 html {
   font-size: 6.25%;
   @include media(xl) {
-    font-size: 3.8%;
+    font-size: 5.25%;
   }
 }
 
 body {
+  min-height: 100%;
   display: grid;
   grid-template-areas:
   "head head"
   "filt res"
   "foot foot";
   grid-template-rows: 160rem 1fr 100rem;
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 27% 1fr;
   grid-gap: 30rem;
   padding: 15rem 30rem 0 25rem;
   margin: 0;
@@ -69,7 +83,14 @@ body {
   &::-webkit-scrollbar {
     display: none;
   }
-
+  @include media(xl) {
+    grid-template-rows: 160rem 1fr 100rem;
+    grid-template-columns: 40% 1fr;
+  }
+  @include media(md) {
+    grid-template-rows: 160rem 1fr 100rem;
+    grid-template-columns: 30% 1fr;
+  }
   @include media(sm) {
     grid-template-areas:
     "head head"
