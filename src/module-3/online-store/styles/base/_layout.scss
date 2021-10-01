@@ -1,0 +1,157 @@
+@use 'global' as *;
+
+@mixin option-button($type) {
+  &__button {
+    @extend %def-box;
+    @include set-size(45rem, 40rem);
+    @if $type == filter {
+      background: map-get($colors, white);
+    } @else if $type == wishlist {
+      background: map-get($colors, bg-purple);
+    }
+  }
+  &__img {
+    width: 14rem;
+    @if $type == filter {
+      transform: rotate(180deg);
+    } @else if $type == wishlist {
+      filter: invert(100%);
+    }
+  }
+}
+
+%action-button {
+  @extend %def-box;
+  @include def-font(14rem, 600);
+  @include set-size(200rem, 45rem);
+  margin: 0;
+  @include display-flex(row, center, center);
+  flex-grow: 1;
+  text-transform: uppercase;
+}
+
+
+.filters {
+  grid-area: filt;
+  @include display-flex(column, space-around, space-around);
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  @include media(sm) {
+    display: none;
+  }
+
+  .caption {
+    @include display-flex(row, space-between, baseline);
+
+    &__text {
+      @include def-font(18rem, 400);
+    }
+
+    @include option-button(filter);
+  }
+
+  &__card {
+    @extend %def-box;
+    flex-grow: 1;
+    background: map-get($colors, white);
+    padding-left: 40rem;
+    padding-top: 20rem;
+  }
+
+  &__caption {
+    @include def-font(18rem, 600);
+  }
+
+  &__input {
+    @include def-font(16rem, 300);
+  }
+
+  &__input--radio, &__input--checkbox {
+    @include set-size(17rem, 15rem);
+    border: 1rem solid map-get($colors, border-gray);
+  }
+
+  &__divider {
+    @include set-size(80%,0px);
+    margin: 30rem 0 30rem 0;
+    border: 1px solid map-get($colors, divider-gray);
+    background: map-get($colors, divider-gray);
+  }
+
+  &__button {
+    @extend %def-box;
+    @include set-size(100%, 56rem);
+    background: map-get($colors, bg-purple);
+    @include def-font(18rem, 400, white);
+    text-transform: uppercase;
+  }
+}
+
+.results {
+  grid-area: res;
+  @include display-flex(column, space-between, space-between, 15rem);
+
+  .caption {
+    @include display-flex(row, space-between, baseline);
+    flex-grow: 1;
+
+    &__text {
+      @include def-font(18rem, 400);
+    }
+
+    @include option-button(wishlist);
+  }
+
+  .under-caption {
+    flex-grow: 1;
+    @include display-flex(column, flex-start, flex-start, 30rem);
+
+    .search {
+      @extend %def-box;
+      @include set-size(100%,60rem);
+      @include display-flex(row, space-between, flex-start);
+
+      &__input {
+        @include set-size(100%, 60rem);
+        border: 0;
+        padding-left: 30rem;
+        @include def-font(22rem, 300);
+        background: map-get($colors, white);
+        border-radius: 8rem 0 0 8rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &__button {
+        height: 60rem;
+        border: 0;
+        padding-right: 20rem;
+        border-radius: 0 8rem 8rem 0;
+        background: map-get($colors, white);
+      }
+
+      &__img {
+        width: 100%;
+      }
+    }
+
+    &__cards {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30rem;
+      @include media(xxl) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include media(xl) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,101 @@
+@use 'global' as *;
+
+.card {
+  @extend %def-box;
+  @include set-size(100%, 486rem);
+  height: 486rem;
+  width: 100%;
+  background: white;
+
+  @include display-flex(column, space-between, center);
+
+  &__product {
+    margin-top: 20rem;
+    max-width: 238rem;
+    height: auto;
+    //@include set-size(238rem,272rem);
+    border-radius: 0;
+    position: relative;
+  }
+
+  .info {
+    width: 90%;
+    @include display-flex(row, space-between, center);
+
+    &__rate {
+      @include set-size(65rem, 30rem);
+      border-radius: 3rem;
+      @include display-flex(row, center, center);
+      background: map-get($colors, bg-purple);
+
+      &--number {
+        margin: 5rem;
+        @include def-font(14rem, 300, map-get($colors, white));
+      }
+
+      &--icon {
+        @include set-size(13rem, 12rem);
+        margin: 5rem;
+      }
+    }
+
+    &__cost {
+      &--number {
+        @include def-font(18rem, 300)
+      }
+    }
+  }
+
+  .description {
+    width: 100%;
+    margin-bottom: 15rem;
+
+    @include display-flex(column, center, flex-start);
+
+    &__heading {
+      margin: 5rem 0 2rem 20rem;
+      @include def-font(16rem, 400);
+    }
+
+    &__text {
+      margin: 5rem 0 2rem 20rem;
+      @include def-font(12rem, 300);
+    }
+  }
+
+  .action {
+    width: 100%;
+    display: flex;
+    justify-self: flex-end;
+
+    &__button {
+      @include set-size(200rem, 45rem);
+      border: 0;
+      margin: 0;
+      @include display-flex(row, center, center);
+      flex-grow: 1;
+      @include def-font(14rem, 600);
+      text-transform: uppercase;
+
+      &--wishlist {
+        border-radius: 0 0 0 8rem;
+        background: map-get($colors, light-gray);
+      }
+
+      &--purchase {
+        border-radius: 0 0 8rem 0;
+        background: map-get($colors, bg-purple);
+        color: map-get($colors, white);
+      }
+    }
+
+    &__icon {
+      margin-right: 8rem;
+    }
+  }
+}
+
+
+
+
+

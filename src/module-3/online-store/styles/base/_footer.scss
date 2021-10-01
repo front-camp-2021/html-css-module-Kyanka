@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+.footer {
+  grid-area: foot;
+  @include display-flex(row, center, flex-start, 20rem);
+  @include def-font(18rem, 300);
+
+  &__arrow {
+    @include set-size(40rem, 40rem);
+    @include display-flex(row, center, center);
+    border-radius: 100%;
+    background: map-get($colors, light-gray);
+
+    &--back {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__nav {
+    height: 40rem;
+    padding: 0 15rem 0 15rem;
+    @include display-flex(row, center, center, 15rem);
+    text-decoration: none;
+    background: map-get($colors, light-gray);
+    border-radius: 40rem;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:target {
+      @include set-size(40rem, 40rem);
+      @include display-flex(row, center, center);
+      border-radius: 100%;
+      background: map-get($colors, bg-purple);
+    }
+  }
+}
+
+
